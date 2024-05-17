@@ -1,5 +1,67 @@
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+#images {
     border-style: dotted;
     border-color: black;
+    height: 99vh;
+    width: 99vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(175, 175, 175);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    border-style: dotted;
+    border-color: black;
+    font-size: 3vh;
+    color: aliceblue;
+}
+.img1{
+    background-image: url(/images/image1.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir el tamaño del div */
+     background-blend-mode: multiply;   
+}
+.img2{
+    background-image: url(/images/image2.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir el tamaño del div */
+     background-blend-mode: multiply;   
+        
+}
+.img3{
+    background-image: url(/images/image3.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir el tamaño del div */
+     background-blend-mode: multiply;   
+        
+}
+.img4{
+    background-image: url(/images/image4.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir el tamaño del div */
+     background-blend-mode: multiply;   
+        
+
+}
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animacion {
+    animation: desplazamiento 5s infinite; /* Animación de 5 segundos que se repite infinitamente */
+}
+#form {
+    border-style: dotted;
+    border-color: black;   
+    height: 99vh;
+    width: 65vw;  
 }
