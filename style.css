@@ -9,6 +9,10 @@ body html{
     font-family: 'Cumprum-Italic-VariableFont_wght.ttf';
     src: url(/fonts/Cuprum-Italic-VariableFont_wght.ttf)
 }
+@font-face{
+    font-family: 'Pinyon-script';
+    src: url(/fonts/PinyonScript-Regular.ttf)
+}
 .fade-in-text {
     opacity: 0; /* Comienza completamente transparente */
     transition: opacity 2s ease-in-out; /* La transición durará 2 segundos */
@@ -18,6 +22,7 @@ body html{
     opacity: 1; /* Cambia a completamente opaco */
     transition: opacity 2s ease-in;/*La transicion durar s segundos*/
   }
+
 #container{
     position: relative;
     overflow-x: hidden;
@@ -37,10 +42,24 @@ body html{
     border: dotted wheat 5px;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
 }
+#marca{
+    font-family: 'Pinyon-script';
+    color: aliceblue;
+    font-size: 5vw ;
+    position: relative;
+    margin-top: 40vh;
+    width: fit-content;
+    height: 10vh;
+}
 #form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 50vw;
     border: solid wheat 3px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+
 }
 #frases{
     width: 30vw;
