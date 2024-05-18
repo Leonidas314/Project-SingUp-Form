@@ -1,25 +1,87 @@
 
 body html{
-
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-.carousel {
+@font-face{
+    font-family: 'Cumprum-Italic-VariableFont_wght.ttf';
+    src: url(/fonts/Cuprum-Italic-VariableFont_wght.ttf)
+}
+.fade-in-text {
+    opacity: 0; /* Comienza completamente transparente */
+    transition: opacity 2s ease-in-out; /* La transición durará 2 segundos */
+  }
+
+.visible {
+    opacity: 1; /* Cambia a completamente opaco */
+    transition: opacity 2s ease-in;/*La transicion durar s segundos*/
+  }
+#container{
     position: relative;
-    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#formcontainer{
+    position: absolute; /* Posiciona el div encima */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100%;
+    border: dotted wheat 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+#form{
+    height: 100vh;
+    width: 50vw;
+    border: solid wheat 3px;
+}
+#frases{
+    width: 30vw;
+    height: 101vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#headers,#spech{
+    font-family: 'Cumprum-Italic-VariableFont_wght.ttf';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    width: 25vw;
+    height: 25vh;
+    border: solid wheat 5px;
+    color: aliceblue;
+    font-size: 5vh;
+}
+#spech{
+    margin-bottom: 27vh;
+    font-size: 3vh ;
+}
+
+.carousel {
+    padding: 0%;
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
 }
 #img1 ,#img2, #img3, #img4 {
-    border-style: dotted;
-    border-color: black;
-    height: 100vh;
+    height: 102vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 @keyframes slide {
     0% { transform: translateX(0%); }
