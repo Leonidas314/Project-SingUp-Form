@@ -6,7 +6,7 @@ body html{
     overflow-x: hidden;
 }
 @font-face{
-    font-family: 'Cumprum-Italic-VariableFont_wght.ttf';
+    font-family: 'Cumprum-Italic.ttf';
     src: url(/fonts/Cuprum-Italic-VariableFont_wght.ttf)
 }
 @font-face{
@@ -28,6 +28,7 @@ body html{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 #formcontainer{
     position: absolute; /* Posiciona el div encima */
     display: flex;
@@ -42,24 +43,45 @@ body html{
     border: dotted wheat 5px;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
 }
-#marca{
-    font-family: 'Pinyon-script';
-    color: aliceblue;
-    font-size: 5vw ;
-    position: relative;
-    margin-top: 40vh;
-    width: fit-content;
-    height: 10vh;
-}
-#form{
+#formulario{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     width: 50vw;
     border: solid wheat 3px;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
 
+}
+input, textarea{
+    opacity: 0.3;
+    margin: 1vh;
+}
+textarea{
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    font-family: 'Cumprum-Italic.ttf';
+    
+}
+#formInputs{  
+    font-family: 'Cumprum-Italic.ttf';  
+    font-size: 3vh;
+    color: lightsteelblue;
+    border: dotted lightblue 5px;
+    width: 45vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2vh;
+}
+#marca{
+    font-family: 'Pinyon-script';
+    color: aliceblue;
+    font-size: 5vw ;
+    margin-top: 15vh;
+    height: 30vh;
+    width: auto;
 }
 #frases{
     width: 30vw;
@@ -71,7 +93,7 @@ body html{
     align-items: center;
 }
 #headers,#spech{
-    font-family: 'Cumprum-Italic-VariableFont_wght.ttf';
+    font-family: 'Cumprum-Italic.ttf';
     display: flex;
     justify-content: center;
     align-items: center;
