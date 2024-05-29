@@ -3,8 +3,8 @@ const spech = document.getElementById('spech')
 var headerChild = document.querySelector('.hParaph')//Porque es document?
 var spechChild = document.querySelector('.fParaph')//Puede ser Child?
 var currentIndex = 0;
-var frases = ["Software Engineering","Movile Apps","International","Work With us!"];
-var speches = ["Working with high qualify professionals in software development","Responsive design for your apps or websites,and videogames to!","Client satified all over the world, remote working with clients and partners", "Do you have any skill? Our teams are constanly growing! Send us a mesage"]
+var frases = ["Software Engineering","Movile Apps","International","Work With us!"]; 
+var speches = ["Working with high qualify professionals in software development","Responsive design for your apps, websites and movile games to!","Client satified all over the world, remote working with clients and partners", "Do you have any skill? Our teams are constanly growing! Send us a mesage"]
 
 headerChild.classList.toggle('visible');
 console.time('Intervalo');
