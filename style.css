@@ -40,7 +40,7 @@ body html{
     left: 0;
     width: 100vw;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */
 }
 #formulario{
     display: flex;
@@ -162,4 +162,47 @@ textarea{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* Estilo para el elemento select */
+#mySelect {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid lightsteelblue;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: lightsteelblue;
+    opacity: 0.5;
+    appearance: none; /* Para eliminar el estilo por defecto */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+/* Estilo para el icono de flecha */
+#mySelect::-ms-expand {
+    display: none;
+}
+
+/* Para centrar el texto dentro del select */
+#mySelect option {
+    text-align: center;
+}
+
+/* Estilo para cada opción del select */
+#mySelect option {
+    background-color:  rgba(0, 0, 0, 0.8);;
+    color: lightsteelblue;
+}
+
+/* Cambiar el color de fondo y texto cuando el select está enfocado */
+#mySelect:focus {
+    border-color:lightsteelblue;
+    outline: none;
+}
+
+/* Para dar estilo a la opción seleccionada */
+#mySelect option:checked {
+    background-color: #007BFF;
+    color: #fff;
 }
