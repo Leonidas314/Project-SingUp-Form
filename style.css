@@ -232,8 +232,21 @@ button {
     transform: translateY(-50%);
   }
   button:active {
-    background-color: #e04e1b; /* Naranja oscuro */
+    background-color: #1be0e0; /* Naranja oscuro */
     box-shadow: 0 2px #666; /* Sombra 3D al hacer click */
     transform: translateY(4px); /* Desplazamiento hacia abajo */
   }
-                
+    
+  
+  .inputs:invalid{
+    border-width: calc(+3px);
+
+    border-style: inset;
+    border-color: rgb(255, 21, 0);
+
+  }
+.inputs:valid{
+    border-style: inset;
+    border-color: rgb(9, 255, 0);
+
+}
