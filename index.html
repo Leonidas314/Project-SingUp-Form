@@ -34,46 +34,47 @@
                                 <td>
 
                                     <label for="name">
-                                        <span>Name: </span>
+                                        <span>Name: </span><br>
                                         <strong><span aria-label="required"></span></strong>
                                       </label>
-                                      <input type="name" class="inputs" name="name" required />
+                                      <input type="name" class="inputs" placeholder="Gordon" name="name" required />
                                 </td>
                                 <td>
                                     <label for="last-name">
-                                        <span>Last Name: </span>
+                                        <span>Last Name: </span> <br>
                                         <strong><span aria-label="required"></span></strong>
                                       </label>
-                                      <input type="last-name" class="inputs" name="last-name" required />
+                                      <input type="last-name" class="inputs" placeholder="Freeman" name="last-name" required />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <label for="email">
-                                        <span>Email: </span>
+                                        <span>Email: </span> <br>
                                         <strong><span aria-label="required"></span></strong>
                                       </label>
-                                      <input type="name" class="inputs" name="email" required />
+                                      <input type="name" class="inputs" placeholder="blackmesa@xmail.com" name="email" 
+                                      pattern="\w+@\w+\.\w{2,3}(\.\w{2,3})?" required />
                                 </td>
                                 <td>
-                                    <label for="phone">
-                                        <span>Phone Number: </span>
+                                    <label for="phone"> <br>
+                                        <span>Phone Number: (+54)</span>
                                         <strong><span aria-label="required"></span></strong>
                                       </label>
-                                      <input type="name" class="inputs" name="phone" required />
+                                      <input type="name" class="inputs" placeholder="3584-444-666" name="phone" pattern="\d{10}" required />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <label for="pwd">
-                                        <span>Password: </span>
+                                        <span>Password: </span><br>
                                         <strong><span aria-label="required">*</span></strong>
                                       </label>
                                       <input type="password" class="inputs" name="password" required />
                                 </td>
                                 <td>
                                     <label for="pwd">
-                                        <span>Confirm Password: </span>
+                                        <span>Confirm Password: </span><br>
                                         <strong><span aria-label="required">*</span></strong>
                                       </label>
                                       <input type="password" class="inputs" name="password" minlength="5" required />
